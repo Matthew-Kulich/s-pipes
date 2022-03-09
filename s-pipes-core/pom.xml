@@ -17,6 +17,12 @@
     <version>0.3.0</version>
     <packaging>jar</packaging>
 
+    <repositories>
+       <repository>
+            <id>org.topbraid</id>
+            <url>https://www.topquadrant.com/repository/spin</url>
+        </repository>
+    </repositories>
 
     <dependencies>
 
@@ -70,7 +76,7 @@
         <dependency>
             <groupId>org.topbraid</groupId>
             <artifactId>shacl</artifactId>
-            <version>1.0.1</version>
+            <version>1.4.2</version>
             <exclusions> <!-- TODO update jena libs and remove exclusions -->
                 <exclusion>
                     <groupId>org.apache.jena</groupId>
@@ -100,6 +106,17 @@
         <dependency>
             <groupId>cz.cvut.kbss.jopa</groupId>
             <artifactId>ontodriver-sesame</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.topbraid</groupId>
+            <artifactId>spin</artifactId>
+            <version>2.0.0</version>
+            <exclusions> <!-- TODO update jena libs and remove exclusions -->
+                <exclusion>
+                    <groupId>org.apache.jena</groupId>
+                    <artifactId>jena-arq</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
