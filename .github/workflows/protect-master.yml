@@ -27,5 +27,5 @@ jobs:
 #      run: mvn compile
 
     # Runs a set of commands using the runners shell
-#    - name: Test
-#      run: mvn test
+    - name: Test
+      run: mvn test
